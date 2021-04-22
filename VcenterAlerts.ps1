@@ -37,7 +37,7 @@ $alarmreport2 >> $outputfile
 
 
 #Send Mail Function
-Send-MailMessage -To "GIS.IOC.MON@computacenter.com","Vamshidhar.Peram@computacenter.com" -From "Vamshidhar.Peram@computacenter.com" -SmtpServer SMTP-GRP-PROD.computacenter.com -Subject $REPORTDATE -Body "Please find the attached alarmreport forall the Vcenters" -Attachments $outputfile
+Send-MailMessage -To <email Address> -From <email address> -SmtpServer <SMTP Server FQDN> -Subject $REPORTDATE -Body "Please find the attached alarmreport forall the Vcenters" -Attachments $outputfile
 
 
 #Acknowledge Alarms
